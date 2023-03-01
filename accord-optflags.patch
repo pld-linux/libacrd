@@ -1,0 +1,46 @@
+--- accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/conductor/Makefile.orig	2012-12-28 01:51:03.000000000 +0100
++++ accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/conductor/Makefile	2023-03-01 16:09:01.936545405 +0100
+@@ -1,6 +1,6 @@
+ sbindir ?= $(PREFIX)/sbin
+ 
+-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
++CFLAGS += -Wall -Wstrict-prototypes -I../include
+ CFLAGS += -D_GNU_SOURCE -DNDEBUG
+ LIBS += -lpthread -ldb -lcpg
+ 
+--- accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/libacrd/Makefile.orig	2012-12-28 01:51:03.000000000 +0100
++++ accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/libacrd/Makefile	2023-03-01 16:10:47.725414609 +0100
+@@ -1,6 +1,6 @@
+ libdir ?= $(PREFIX)/lib
+ 
+-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
++CFLAGS += -Wall -Wstrict-prototypes -I../include
+ CFLAGS += -D_GNU_SOURCE -DNDEBUG -fPIC
+ 
+ LIBRARIES = libacrd.a libacrd.so
+--- accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/lib/Makefile.orig	2012-12-28 01:51:03.000000000 +0100
++++ accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/lib/Makefile	2023-03-01 16:10:56.989264214 +0100
+@@ -1,4 +1,4 @@
+-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
++CFLAGS += -Wall -Wstrict-prototypes -I../include
+ CFLAGS += -D_GNU_SOURCE -DNDEBUG
+ 
+ .PHONY:clean
+--- accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/test/Makefile.orig	2012-12-28 01:51:03.000000000 +0100
++++ accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/test/Makefile	2023-03-01 16:11:07.389254303 +0100
+@@ -1,4 +1,4 @@
+-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
++CFLAGS += -Wall -Wstrict-prototypes -I../include
+ CFLAGS += -D_GNU_SOURCE
+ CFLAGS += $(shell pkg-config --cflags glib-2.0)
+ LIBS += -lpthread
+--- accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/apps/queue/Makefile.orig	2012-12-28 01:51:03.000000000 +0100
++++ accord-1ee1b413be67a48e4de133e3e82bbef52aac9df2/apps/queue/Makefile	2023-03-01 16:19:54.939684250 +0100
+@@ -1,6 +1,6 @@
+ sbindir ?= $(PREFIX)/sbin
+ 
+-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../../include
++CFLAGS += -Wall -Wstrict-prototypes -I../../include
+ CFLAGS += -D_GNU_SOURCE -DNDEBUG
+ LIBS += -L../../libacrd -lpthread -lacrd
+ 
